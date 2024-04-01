@@ -67,9 +67,10 @@ let products = [
   function addtocart(index) {
     const selectedItem = products[index];
     const itemIndex = cart.findIndex((item) => item.id === selectedItem.id);
+  
     if (itemIndex === -1) {
       cart.push({ ...selectedItem, quantity: 1 });
-      cart_button[index].style.backgroundColor='red'
+      alert(`${selectedItem.title} is added to cart`)
     } else {
       //here on click button increments the quntity of itmes
      // cart[itemIndex].quantity++;
@@ -78,10 +79,11 @@ let products = [
   }
   // Delete item from cart
   function delElement(index) {
-    if (confirm("Are you sure you want to continue?")) {
+  if (confirm("Are you sure you want to continue?")) {
       //console.log("User clicked OK.");
       cart.splice(index, 1);
-       displayCart();
+      displayCart();
+  //green color #198754 
   } 
   }
   // Update quantity in cart
