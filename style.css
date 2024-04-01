@@ -42,13 +42,11 @@ transform: scale(2);
     height: 100%;
     background-color: #fff;
     display: none;   
-    
     border-left: 1px solid black;
 }
 .right-side-bar.expanded {
     width: 500px; 
     display: inline; 
-   
     animation: expandWidth 0.3s ease-in-out;
 }
 @keyframes expandWidth {
@@ -63,7 +61,6 @@ transform: scale(2);
     width: 0;
     /* display: none; */
    /*  visibility: collapse; */
-   
     animation: expandWidth1 0.5s ease-in-out;
 }
 @keyframes expandWidth1 {
@@ -83,6 +80,7 @@ transform: scale(2);
     width: auto;
     transition: all ease-in-out 2s;
 }
+
 /* cart page */
 .cart-page{
 /*     display: flex;

@@ -44,11 +44,14 @@ let products = [
   let rightSideBar = document.querySelector("section .right-side-bar");
  // let sidebarExpanded = false;
  let divrow=document.querySelector('.row_append')
+ 
+ 
   function sidebar() {
     if (!sidebarExpanded) {
       rightSideBar.classList.remove("expanded1");
       rightSideBar.classList.add("expanded");
       document.querySelector('.food_items').style.width='700px'
+     
       sidebarExpanded = true;
       
     } else {
@@ -60,11 +63,13 @@ let products = [
   }
   // Add to cart function
   let cart = [];
+  let cart_button=document.querySelectorAll('.row_append a')
   function addtocart(index) {
     const selectedItem = products[index];
     const itemIndex = cart.findIndex((item) => item.id === selectedItem.id);
     if (itemIndex === -1) {
       cart.push({ ...selectedItem, quantity: 1 });
+      cart_button[index].style.backgroundColor='red'
     } else {
       //here on click button increments the quntity of itmes
      // cart[itemIndex].quantity++;
