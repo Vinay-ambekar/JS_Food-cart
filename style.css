@@ -45,7 +45,7 @@ transform: scale(2);
     border-left: 1px solid black;
 }
 .right-side-bar.expanded {
-    width: 500px; 
+    width: 440px; 
     display: inline; 
     animation: expandWidth 0.3s ease-in-out;
 }
@@ -54,7 +54,7 @@ transform: scale(2);
       width:0; 
     }
 100%{
-      width:500px;
+      width:440px;
     }  
   } 
    .right-side-bar.expanded1 {
@@ -65,7 +65,7 @@ transform: scale(2);
 }
 @keyframes expandWidth1 {
     0%{
-      width:500px; 
+      width:440px; 
       display: inline;
     }
 100%{
